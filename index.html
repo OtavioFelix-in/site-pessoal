@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Otávio Felix da Silva — Desenvolvedor Back-End</title>
-<meta name="description" content="Otávio Felix da Silva — Estudante de Sistemas de Informação, desenvolvedor back-end em formação. PL/SQL, SQL, Python, JavaScript.">
+<title>Otávio Felix da Silva — Desenvolvedor Full-Stack</title>
+<meta name="description" content="Otávio Felix da Silva — Desenvolvedor Full-Stack, Banco de Dados e Automação. PL/SQL, SQL, Python, JavaScript. Estudante de Sistemas de Informação.">
 
 <!-- Open Graph (preview ao colar o link no LinkedIn/WhatsApp) -->
-<meta property="og:title" content="Otávio Felix da Silva — Desenvolvedor Back-End">
-<meta property="og:description" content="Estudante de Sistemas de Informação (PUC-Campinas) atuando com sistemas corporativos e banco de dados Oracle.">
+<meta property="og:title" content="Otávio Felix da Silva — Desenvolvedor Full-Stack">
+<meta property="og:description" content="Desenvolvimento full-stack, banco de dados e automação de processos. Estudante de Sistemas de Informação na PUC-Campinas.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,19 +18,22 @@
 </head>
 <body>
 
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<a class="skip-link" href="#conteudo" data-en="Skip to content">Pular para o conteúdo</a>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#topo" class="nav-logo">OF<span class="dot">.</span></a>
+    <a href="#topo" class="nav-logo">Otávio Felix</a>
     <nav class="nav-links" id="nav-links">
-      <a href="#sobre">Sobre</a>
-      <a href="#trajetoria">Trajetória</a>
-      <a href="#projetos">Projetos</a>
+      <a href="#sobre" data-en="About">Sobre</a>
+      <a href="#trajetoria" data-en="Journey">Trajetória</a>
+      <a href="#projetos" data-en="Projects">Projetos</a>
       <a href="#skills">Skills</a>
-      <a href="#formacao">Formação</a>
-      <a href="#contato">Contato</a>
+      <a href="#formacao" data-en="Education">Formação</a>
+      <a href="#contato" data-en="Contact">Contato</a>
     </nav>
+    <button id="lang-toggle" class="lang-toggle" aria-label="Switch language / Mudar idioma" title="PT / EN">
+      <span id="lang-toggle-label">EN</span>
+    </button>
     <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
       <svg id="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg id="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
@@ -46,26 +49,29 @@
   <!-- HERO -->
   <section class="hero" id="topo">
     <div class="hero-inner">
-      <div class="hero-photo" aria-hidden="true">
-        <img src="assets/foto.jpg" alt="" onerror="this.parentElement.classList.add('no-photo')">
-        <span class="hero-photo-fallback">OF</span>
+      <div class="hero-photo">
+        <img src="assets/foto.jpg" alt="Foto de Otávio Felix da Silva" onerror="this.parentElement.classList.add('no-photo')">
+        <span class="hero-photo-fallback" aria-hidden="true">OF</span>
       </div>
-      <p class="hero-eyebrow">Paulínia · SP</p>
-      <h1>Otávio Felix da Silva</h1>
-      <p class="hero-role">Desenvolvedor Back-End em formação · PL/SQL · SQL · Python · JavaScript</p>
-      <p class="hero-pitch">
-        Estudante de Sistemas de Informação na PUC-Campinas, atuando em ambiente corporativo
-        com desenvolvimento de sistemas e banco de dados Oracle.
-      </p>
-      <div class="hero-actions">
-        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-        <a href="assets/curriculo-otavio-felix.pdf" class="btn btn-ghost" download>Baixar currículo</a>
-        <a href="https://www.linkedin.com/in/otaviofelix" target="_blank" rel="noopener" class="btn btn-icon" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.6v1.64h.05c.5-.95 1.73-1.95 3.56-1.95 3.81 0 4.52 2.5 4.52 5.76V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21h-4V9Z"/></svg>
-        </a>
-        <a href="https://github.com/OtavioFelix-in" target="_blank" rel="noopener" class="btn btn-icon" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.93c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.78-4.57 5.04.36.32.68.95.68 1.92v2.85c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
-        </a>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Paulínia · SP</p>
+        <h1>Otávio Felix da Silva</h1>
+        <p class="hero-role" data-en="Full-Stack Developer · Database · Automation">Desenvolvedor Full-Stack · Banco de Dados · Automação</p>
+        <p class="hero-pitch" data-en="Information Systems student, working in a corporate environment with system development, Oracle databases and process automation.">
+          Estudante de Sistemas de Informação, atuando em ambiente corporativo
+          com desenvolvimento de sistemas, banco de dados Oracle e automação de processos.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary" data-en="View projects">Ver projetos</a>
+          <a href="assets/curriculo-otavio-felix.pdf" class="btn btn-ghost" download>Currículo (PT)</a>
+          <a href="assets/resume-otavio-felix.pdf" class="btn btn-ghost" download>Resume (EN)</a>
+          <a href="https://www.linkedin.com/in/otaviofelix" target="_blank" rel="noopener" class="btn btn-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.6v1.64h.05c.5-.95 1.73-1.95 3.56-1.95 3.81 0 4.52 2.5 4.52 5.76V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21h-4V9Z"/></svg>
+          </a>
+          <a href="https://github.com/OtavioFelix-in" target="_blank" rel="noopener" class="btn btn-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.93c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.78-4.57 5.04.36.32.68.95.68 1.92v2.85c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
     <a href="#sobre" class="scroll-cue" aria-hidden="true">
@@ -75,38 +81,37 @@
 
   <!-- SOBRE -->
   <section class="section" id="sobre">
-    <p class="section-eyebrow">Sobre</p>
-    <h2 class="section-title">Quem sou</h2>
+    <p class="section-eyebrow" data-en="About">Sobre</p>
+    <h2 class="section-title" data-en="About me">Quem sou</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>
-          Sou estudante de Sistemas de Informação na PUC-Campinas (período noturno, 2º semestre) e
-          atuo na área de desenvolvimento de software em ambiente corporativo. Tenho experiência
-          prática com banco de dados usando PL/SQL e SQL, e com desenvolvimento web em JavaScript,
-          HTML e CSS.
+        <p data-en="I work in software development in a corporate environment, focused on building and maintaining applications, databases and process automation. I have hands-on experience with PL/SQL and SQL in an Oracle environment, and with web development in JavaScript, HTML and CSS.">
+          Atuo na área de desenvolvimento de software em ambiente corporativo, com foco em
+          construção e manutenção de aplicações, banco de dados e automação de processos.
+          Tenho experiência prática com PL/SQL e SQL em ambiente Oracle, e com desenvolvimento
+          web em JavaScript, HTML e CSS.
         </p>
-        <p>
+        <p data-en="My foundation includes data modeling, programming logic, data structures, object orientation, version control with Git and software engineering fundamentals. I'm an Information Systems student, with an ongoing interest in full-stack development, systems integration and process improvement through technology.">
           Minha base inclui modelagem de dados, lógica de programação, estrutura de dados,
           orientação a objetos, versionamento com Git e fundamentos de engenharia de software.
-          Meu foco está na construção e manutenção de aplicações, automação de processos e
-          desenvolvimento de soluções internas orientadas a dados — com interesse contínuo em
-          back-end, integração de sistemas e melhoria de processos através da tecnologia.
+          Sou estudante de Sistemas de Informação, com interesse contínuo em desenvolvimento
+          full-stack, integração de sistemas e melhoria de processos através da tecnologia.
         </p>
       </div>
       <ul class="about-facts">
-        <li><strong>Formação</strong><span>Sistemas de Informação — PUC-Campinas</span></li>
-        <li><strong>Foco</strong><span>Back-end · Banco de dados · Automação</span></li>
-        <li><strong>Localização</strong><span>Paulínia, SP</span></li>
-        <li><strong>Idiomas</strong><span>Português (nativo) · Inglês A2 · Espanhol básico</span></li>
+        <li><strong data-en="Focus">Foco</strong><span data-en="Full-stack · Database · Automation">Full-stack · Banco de dados · Automação</span></li>
+        <li><strong data-en="Education">Formação</strong><span data-en="Information Systems — PUC-Campinas">Sistemas de Informação — PUC-Campinas</span></li>
+        <li><strong data-en="Location">Localização</strong><span>Paulínia, SP</span></li>
+        <li><strong data-en="Languages">Idiomas</strong><span data-en="Portuguese (native) · English A2 · Spanish basic">Português (nativo) · Inglês A2 · Espanhol básico</span></li>
       </ul>
     </div>
   </section>
 
   <!-- TRAJETÓRIA -->
   <section class="section" id="trajetoria">
-    <p class="section-eyebrow">Trajetória</p>
-    <h2 class="section-title">De 2022 até hoje</h2>
-    <p class="section-lead">
+    <p class="section-eyebrow" data-en="Journey">Trajetória</p>
+    <h2 class="section-title" data-en="From 2022 to today">De 2022 até hoje</h2>
+    <p class="section-lead" data-en="Professional and personal, on the same timeline — because that's how it happened.">
       Profissional e pessoal, na mesma linha do tempo — porque foi assim que aconteceu.
     </p>
 
@@ -116,8 +121,10 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-year">2022</span>
-          <h3>Redação vencedora — EPTV</h3>
-          <p>Redação premiada em concurso da EPTV realizado na escola; convidado à emissora e participação em reportagem exibida na TV.</p>
+          <div class="tl-body">
+            <h3 data-en="Award-winning essay — EPTV">Redação vencedora — EPTV</h3>
+            <p data-en="Essay awarded in an EPTV contest held at school; invited to the TV station and featured in a broadcast segment.">Redação premiada em concurso da EPTV realizado na escola; convidado à emissora e participação em reportagem exibida na TV.</p>
+          </div>
         </div>
       </li>
 
@@ -125,8 +132,10 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-year">2022–2024</span>
-          <h3>Aluno destaque e ação social</h3>
-          <p>Reconhecido como aluno destaque na escola; idealizou e conduziu uma distribuição de roupas para colegas e participou de arrecadações de alimentos e cestas básicas.</p>
+          <div class="tl-body">
+            <h3 data-en="Top student and community action">Aluno destaque e ação social</h3>
+            <p data-en="Recognized as top student at school; conceived and led a clothing donation drive for classmates and took part in food and basic-basket collections.">Reconhecido como aluno destaque na escola; idealizou e conduziu uma distribuição de roupas para colegas e participou de arrecadações de alimentos e cestas básicas.</p>
+          </div>
         </div>
       </li>
 
@@ -134,8 +143,10 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-year">2023–2025</span>
-          <h3>Formação técnica — SENAI Paulínia</h3>
-          <p>Sequência de cursos em programação, banco de dados e dados: Programação em Banco de Dados (120h), Fundamentos de Python, Power BI, AI-900 e Microsoft Office Specialist.</p>
+          <div class="tl-body">
+            <h3 data-en="Technical training — SENAI Paulínia">Formação técnica — SENAI Paulínia</h3>
+            <p data-en="Series of courses in programming, databases and data: Database Programming (120h), Python Fundamentals, Power BI, AI-900 and Microsoft Office Specialist.">Sequência de cursos em programação, banco de dados e dados: Programação em Banco de Dados (120h), Fundamentos de Python, Power BI, AI-900 e Microsoft Office Specialist.</p>
+          </div>
         </div>
       </li>
 
@@ -143,8 +154,10 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-year">2023–2025</span>
-          <h3>Líder da Equipe de Mídia — Nação Evangelizadora</h3>
-          <p>Primeiro trabalho e já com liderança: equipe de 6 pessoas, autonomia total sobre organização, escalas e cobertura de ~15 eventos mensais. Alcance nas redes ampliado de 200 para 2.000 pessoas (10x).</p>
+          <div class="tl-body">
+            <h3 data-en="Media Team Leader — Nação Evangelizadora">Líder da Equipe de Mídia — Nação Evangelizadora</h3>
+            <p data-en="First job, already in a leadership role: a 6-person team, full autonomy over organization, scheduling and coverage of ~15 events a month. Grew social media reach from 200 to 2,000 people (10x).">Primeiro trabalho e já com liderança: equipe de 6 pessoas, autonomia total sobre organização, escalas e cobertura de ~15 eventos mensais. Alcance nas redes ampliado de 200 para 2.000 pessoas (10x).</p>
+          </div>
         </div>
       </li>
 
@@ -152,8 +165,21 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-year">2024</span>
-          <h3>SENAI Portas Abertas — apresentador na estante de Java</h3>
-          <p>Ainda como aluno, selecionado para apresentar ao público os projetos em Java dos alunos do SENAI Paulínia no evento de portas abertas.</p>
+          <div class="tl-body">
+            <h3 data-en="SENAI Open House — Java booth presenter">SENAI Portas Abertas — apresentador na estante de Java</h3>
+            <p data-en="As a SENAI student, selected to present the Java projects built by Paulínia's students to the public at the open house event.">Como aluno do SENAI, selecionado para apresentar ao público os projetos em Java dos alunos de Paulínia no evento de portas abertas.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="tl-item tl-personal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-year">2025</span>
+          <div class="tl-body">
+            <h3 data-en="SENAI Open House — invited guest">SENAI Portas Abertas — convidado</h3>
+            <p data-en="Invited back to the event for outstanding performance as a student, this time as an alumnus.">Convidado a retornar ao evento pelo bom desempenho como estudante, desta vez na condição de ex-aluno.</p>
+          </div>
         </div>
       </li>
 
@@ -161,35 +187,43 @@
         <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-year">2025–2026</span>
-          <h3>Jovem Aprendiz — ArcTest</h3>
-          <p>Padronização de ~4 arquivos técnicos por dia (PT/EN), gestão de 200–300 certificados de operadores e reestruturação de 20 anos de arquivos históricos (~100% de ganho de eficiência). Novo processo de organização de blocos de calibração: +200% na eficiência de consulta.</p>
+          <div class="tl-body">
+            <h3 data-en="Apprentice — ArcTest">Jovem Aprendiz — ArcTest</h3>
+            <p data-en="Standardized ~4 technical reports a day (PT/EN), managed 200–300 operator certifications, and restructured 20 years of historical files (~100% efficiency gain). New calibration-block organization process: +200% query efficiency.">Padronização de ~4 arquivos técnicos por dia (PT/EN), gestão de 200–300 certificados de operadores e reestruturação de 20 anos de arquivos históricos (~100% de ganho de eficiência). Novo processo de organização de blocos de calibração: +200% na eficiência de consulta.</p>
+          </div>
         </div>
       </li>
 
       <li class="tl-item tl-personal">
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <span class="tl-year">Fim de 2025</span>
-          <h3>Aprovado em 4 instituições</h3>
-          <p>Aprovado na PUC-Campinas, na primeira turma da FATEC Paulínia, na ETEP Paulínia e no técnico do SENAI — escolheu a PUC-Campinas para cursar Sistemas de Informação.</p>
+          <span class="tl-year" data-en="Late 2025">Fim de 2025</span>
+          <div class="tl-body">
+            <h3 data-en="Accepted into 4 institutions">Aprovado em 4 instituições</h3>
+            <p data-en="Accepted into PUC-Campinas, FATEC Paulínia's first class, ETEP Paulínia and SENAI's technical program — chose PUC-Campinas to study Information Systems.">Aprovado na PUC-Campinas, na primeira turma da FATEC Paulínia, na ETEP Paulínia e no técnico do SENAI — escolheu a PUC-Campinas para cursar Sistemas de Informação.</p>
+          </div>
         </div>
       </li>
 
       <li class="tl-item tl-work">
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <span class="tl-year">2026 – atual</span>
-          <h3>Estagiário de Desenvolvimento — AgRoss</h3>
-          <p>Desenvolvimento e manutenção de sistemas internos com PL/SQL, SQL e interfaces web. Participação em projetos de inovação, incluindo a introdução de IA em um canal de autoatendimento.</p>
+          <span class="tl-year" data-en="2026 – present">2026 – atual</span>
+          <div class="tl-body">
+            <h3 data-en="Development Intern — AgRoss">Estagiário de Desenvolvimento — AgRoss</h3>
+            <p data-en="Development and maintenance of internal systems with PL/SQL, SQL and web interfaces. Involved in innovation projects, including introducing AI into a self-service channel.">Desenvolvimento e manutenção de sistemas internos com PL/SQL, SQL e interfaces web. Participação em projetos de inovação, incluindo a introdução de IA em um canal de autoatendimento.</p>
+          </div>
         </div>
       </li>
 
       <li class="tl-item tl-personal">
         <div class="tl-dot"></div>
         <div class="tl-content">
-          <span class="tl-year">2026 – atual</span>
-          <h3>Meu Bolso — projeto próprio</h3>
-          <p>Aplicativo de controle financeiro pessoal, do conceito ao código: orçamento, contas fixas, cartões e fechamento mensal.</p>
+          <span class="tl-year" data-en="2026 – present">2026 – atual</span>
+          <div class="tl-body">
+            <h3 data-en="Meu Bolso — personal project">Meu Bolso — projeto próprio</h3>
+            <p data-en="Personal finance app, from concept to code: fixed bills, credit cards, budgeting and monthly closing.">Aplicativo de controle financeiro pessoal, do conceito ao código: orçamento, contas fixas, cartões e fechamento mensal.</p>
+          </div>
         </div>
       </li>
 
@@ -198,8 +232,8 @@
 
   <!-- PROJETOS -->
   <section class="section" id="projetos">
-    <p class="section-eyebrow">Projetos</p>
-    <h2 class="section-title">O que venho construindo</h2>
+    <p class="section-eyebrow" data-en="Projects">Projetos</p>
+    <h2 class="section-title" data-en="What I've been building">O que venho construindo</h2>
 
     <div class="cards">
       <article class="card">
@@ -209,28 +243,21 @@
             <span>React Native</span><span>Expo</span><span>SQLite</span>
           </div>
         </div>
-        <p class="card-problem"><strong>Problema:</strong> controlar orçamento pessoal de forma simples, sem depender de planilha.</p>
-        <p class="card-solution"><strong>Solução:</strong> app com contas fixas, cartões e fechamento de mês, guardando tudo localmente.</p>
-        <a href="#" class="card-link" aria-disabled="true" title="Link do repositório em breve">Ver no GitHub →</a>
+        <p class="card-problem" data-en-html="<strong>Problem:</strong> keeping track of personal finances in a simple way, without relying on spreadsheets."><strong>Problema:</strong> controlar orçamento pessoal de forma simples, sem depender de planilha.</p>
+        <p class="card-solution" data-en-html="<strong>Solution:</strong> an app with fixed bills, credit cards and monthly closing, storing everything locally."><strong>Solução:</strong> app com contas fixas, cartões e fechamento de mês, guardando tudo localmente.</p>
+        <a href="#" class="card-link" aria-disabled="true" title="Link do repositório em breve" data-en="View on GitHub →">Ver no GitHub →</a>
       </article>
 
       <article class="card">
         <div class="card-top">
-          <h3>Este site</h3>
+          <h3>MaduTasks</h3>
           <div class="card-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>React Native</span><span>Expo</span>
           </div>
         </div>
-        <p class="card-problem"><strong>Problema:</strong> ter um único link atualizado para currículo, LinkedIn e GitHub.</p>
-        <p class="card-solution"><strong>Solução:</strong> página única, leve, sem framework, hospedada no GitHub Pages.</p>
-        <a href="https://github.com/OtavioFelix-in" target="_blank" rel="noopener" class="card-link">Ver no GitHub →</a>
-      </article>
-
-      <article class="card card-empty">
-        <div class="card-top">
-          <h3>Próximo projeto</h3>
-        </div>
-        <p class="card-problem">Espaço reservado para um projeto de banco de dados / automação.</p>
+        <p class="card-problem" data-en-html="<strong>Problem:</strong> keeping track of everyday tasks in a simple, direct way."><strong>Problema:</strong> organizar tarefas do dia a dia de forma simples e direta.</p>
+        <p class="card-solution" data-en-html="<strong>Solution:</strong> a to-do list app with notifications and a custom icon, built with Expo."><strong>Solução:</strong> app de lista de tarefas com notificações e ícone próprio, feito no Expo.</p>
+        <a href="https://github.com/OtavioFelix-in/Madu-Tasks" target="_blank" rel="noopener" class="card-link" data-en="View on GitHub →">Ver no GitHub →</a>
       </article>
     </div>
   </section>
@@ -238,73 +265,73 @@
   <!-- SKILLS -->
   <section class="section" id="skills">
     <p class="section-eyebrow">Skills</p>
-    <h2 class="section-title">Stack e ferramentas</h2>
+    <h2 class="section-title" data-en="Stack and tools">Stack e ferramentas</h2>
 
     <div class="skills-grid">
       <div class="skill-group">
-        <h3>Linguagens</h3>
+        <h3 data-en="Languages">Linguagens</h3>
         <div class="chips"><span>Java</span><span>Python</span><span>JavaScript</span></div>
       </div>
       <div class="skill-group">
-        <h3>Banco de dados</h3>
-        <div class="chips"><span>SQL</span><span>PL/SQL</span><span>Oracle</span><span>Modelagem de dados</span></div>
+        <h3 data-en="Database">Banco de dados</h3>
+        <div class="chips chips-db"><span>SQL</span><span>PL/SQL</span><span>Oracle</span><span data-en="Data modeling">Modelagem de dados</span></div>
       </div>
       <div class="skill-group">
         <h3>Web</h3>
         <div class="chips"><span>HTML</span><span>CSS</span></div>
       </div>
       <div class="skill-group">
-        <h3>Dados</h3>
+        <h3 data-en="Data">Dados</h3>
         <div class="chips"><span>Power BI</span></div>
       </div>
       <div class="skill-group">
-        <h3>Ferramentas</h3>
+        <h3 data-en="Tools">Ferramentas</h3>
         <div class="chips"><span>Git</span><span>Excel</span><span>Word</span><span>PowerPoint</span><span>Canva</span><span>CapCut</span></div>
       </div>
       <div class="skill-group">
-        <h3>Fundamentos</h3>
-        <div class="chips"><span>POO</span><span>Estrutura de dados</span><span>Lógica de programação</span><span>Engenharia de software</span></div>
+        <h3 data-en="Fundamentals">Fundamentos</h3>
+        <div class="chips"><span data-en="OOP">POO</span><span data-en="Data structures">Estrutura de dados</span><span data-en="Programming logic">Lógica de programação</span><span data-en="Software engineering">Engenharia de software</span></div>
       </div>
     </div>
 
     <div class="soft-skills">
-      <span>Liderança</span>
-      <span>Comunicação clara</span>
-      <span>Organização</span>
-      <span>Atenção a detalhes</span>
-      <span>Trabalho em equipe</span>
-      <span>Responsabilidade</span>
-      <span>Proatividade</span>
+      <span data-en="Leadership">Liderança</span>
+      <span data-en="Clear communication">Comunicação clara</span>
+      <span data-en="Organization">Organização</span>
+      <span data-en="Attention to detail">Atenção a detalhes</span>
+      <span data-en="Teamwork">Trabalho em equipe</span>
+      <span data-en="Responsibility">Responsabilidade</span>
+      <span data-en="Proactivity">Proatividade</span>
     </div>
   </section>
 
   <!-- FORMAÇÃO -->
   <section class="section" id="formacao">
-    <p class="section-eyebrow">Formação</p>
-    <h2 class="section-title">Educação e certificações</h2>
+    <p class="section-eyebrow" data-en="Education">Formação</p>
+    <h2 class="section-title" data-en="Education and certifications">Educação e certificações</h2>
 
     <div class="edu-block">
       <h3>Pontifícia Universidade Católica de Campinas (PUC-Campinas)</h3>
-      <p>Bacharelado em Sistemas de Informação — período noturno — 2º semestre</p>
+      <p data-en="Bachelor's in Information Systems — evening program">Bacharelado em Sistemas de Informação — período noturno</p>
     </div>
 
     <ul class="courses">
-      <li><span>Programação em Banco de Dados</span><em>SENAI · 120h</em></li>
+      <li><span data-en="Database Programming">Programação em Banco de Dados</span><em>SENAI · 120h</em></li>
       <li><span>Microsoft Office Specialist</span><em>SENAI · 60h</em></li>
-      <li><span>AI-900: Fundamentos de IA Azure</span><em>SENAI · 40h</em></li>
+      <li><span data-en="AI-900: Azure AI Fundamentals">AI-900: Fundamentos de IA Azure</span><em>SENAI · 40h</em></li>
       <li><span>Power BI</span><em>SENAI · 32h</em></li>
-      <li><span>Fundamentos de Python</span><em>SENAI · 30h</em></li>
+      <li><span data-en="Python Fundamentals">Fundamentos de Python</span><em>SENAI · 30h</em></li>
       <li><span>Java Foundations</span><em>Oracle Academy · 30h</em></li>
     </ul>
 
-    <p class="courses-note">+20 cursos concluídos em tecnologia, dados, IA e desenvolvimento profissional — lista completa no LinkedIn.</p>
+    <p class="courses-note" data-en="20+ completed courses in technology, data, AI and professional development — full list on LinkedIn.">+20 cursos concluídos em tecnologia, dados, IA e desenvolvimento profissional — lista completa no LinkedIn.</p>
   </section>
 
   <!-- CONTATO -->
   <section class="section section-contact" id="contato">
-    <p class="section-eyebrow">Contato</p>
-    <h2 class="section-title">Vamos conversar</h2>
-    <p class="section-lead">Aberto a oportunidades de estágio e desenvolvimento back-end.</p>
+    <p class="section-eyebrow" data-en="Contact">Contato</p>
+    <h2 class="section-title" data-en="Let's talk">Vamos conversar</h2>
+    <p class="section-lead" data-en="Open to internship and software development opportunities.">Aberto a oportunidades de estágio e desenvolvimento back-end.</p>
 
     <div class="contact-grid">
       <a class="contact-item" href="mailto:otavio.felix433@gmail.com">
@@ -325,7 +352,10 @@
       </a>
     </div>
 
-    <a href="assets/curriculo-otavio-felix.pdf" class="btn btn-primary btn-lg" download>Baixar currículo em PDF</a>
+    <div class="hero-actions hero-actions-center">
+      <a href="assets/curriculo-otavio-felix.pdf" class="btn btn-primary btn-lg" download>Currículo em PDF (PT)</a>
+      <a href="assets/resume-otavio-felix.pdf" class="btn btn-ghost btn-lg" download>Resume in PDF (EN)</a>
+    </div>
   </section>
 
 </main>

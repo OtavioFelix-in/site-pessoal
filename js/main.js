@@ -44,6 +44,76 @@
     });
   }
 
+  // ---- Idioma PT/EN ----
+  var langToggle = document.getElementById("lang-toggle");
+  var langLabel = document.getElementById("lang-toggle-label");
+  var LANG_KEY = "of-lang";
+
+  function getStoredLang() {
+    try {
+      return localStorage.getItem(LANG_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function setStoredLang(value) {
+    try {
+      localStorage.setItem(LANG_KEY, value);
+    } catch (e) {
+      /* localStorage indisponível — segue sem persistir */
+    }
+  }
+
+  function applyLang(lang) {
+    var nodes = document.querySelectorAll("[data-en], [data-en-html]");
+    nodes.forEach(function (el) {
+      if (lang === "en") {
+        if (el.hasAttribute("data-en-html")) {
+          if (!el.hasAttribute("data-pt-html")) {
+            el.setAttribute("data-pt-html", el.innerHTML);
+          }
+          el.innerHTML = el.getAttribute("data-en-html");
+        } else {
+          if (!el.hasAttribute("data-pt")) {
+            el.setAttribute("data-pt", el.textContent);
+          }
+          el.textContent = el.getAttribute("data-en");
+        }
+      } else {
+        if (el.hasAttribute("data-pt-html")) {
+          el.innerHTML = el.getAttribute("data-pt-html");
+        } else if (el.hasAttribute("data-pt")) {
+          el.textContent = el.getAttribute("data-pt");
+        }
+      }
+    });
+    document.documentElement.lang = lang === "en" ? "en" : "pt-BR";
+    if (langLabel) {
+      langLabel.textContent = lang === "en" ? "PT" : "EN";
+    }
+    if (langToggle) {
+      langToggle.setAttribute(
+        "aria-label",
+        lang === "en" ? "Mudar para português" : "Switch to English"
+      );
+    }
+  }
+
+  var storedLang = getStoredLang();
+  if (storedLang) {
+    applyLang(storedLang);
+  }
+
+  if (langToggle) {
+    langToggle.addEventListener("click", function () {
+      var current = document.documentElement.lang === "en" ? "en" : "pt";
+      var next = current === "en" ? "pt" : "en";
+      applyLang(next);
+      setStoredLang(next);
+    });
+  }
+
   // ---- Menu mobile ----
   var navToggle = document.getElementById("nav-toggle");
   var navLinks = document.getElementById("nav-links");
