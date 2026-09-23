@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,8 +64,7 @@
         </p>
         <div class="hero-actions">
           <a href="#projetos" class="btn btn-primary" data-en="View projects">Ver projetos</a>
-          <a href="assets/curriculo-otavio-felix.pdf" class="btn btn-ghost" download>Currículo (PT)</a>
-          <a href="assets/resume-otavio-felix.pdf" class="btn btn-ghost" download>Resume (EN)</a>
+          <a href="#contato" class="btn btn-ghost" data-en="Contact">Contato</a>
           <a href="https://www.linkedin.com/in/otaviofelix" target="_blank" rel="noopener" class="btn btn-icon" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.6v1.64h.05c.5-.95 1.73-1.95 3.56-1.95 3.81 0 4.52 2.5 4.52 5.76V21h-4v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21h-4V9Z"/></svg>
           </a>
@@ -114,6 +114,11 @@
     <p class="section-lead" data-en="Professional and personal, on the same timeline — because that's how it happened.">
       Profissional e pessoal, na mesma linha do tempo — porque foi assim que aconteceu.
     </p>
+
+    <div class="tl-legend">
+      <span class="tl-legend-item"><i class="tl-legend-dot tl-legend-dot-work"></i><span data-en="Professional">Profissional</span></span>
+      <span class="tl-legend-item"><i class="tl-legend-dot tl-legend-dot-personal"></i><span data-en="Personal">Pessoal</span></span>
+    </div>
 
     <ol class="timeline">
 
@@ -210,7 +215,7 @@
         <div class="tl-content">
           <span class="tl-year" data-en="2026 – present">2026 – atual</span>
           <div class="tl-body">
-            <h3 data-en="Development Intern — AgRoss">Estagiário de Desenvolvimento — AgRoss</h3>
+            <h3><span class="tl-badge-current" data-en="Current">Atual</span> <span data-en="Development Intern — AgRoss">Estagiário de Desenvolvimento — AgRoss</span></h3>
             <p data-en="Development and maintenance of internal systems with PL/SQL, SQL and web interfaces. Involved in innovation projects, including introducing AI into a self-service channel.">Desenvolvimento e manutenção de sistemas internos com PL/SQL, SQL e interfaces web. Participação em projetos de inovação, incluindo a introdução de IA em um canal de autoatendimento.</p>
           </div>
         </div>
@@ -221,7 +226,7 @@
         <div class="tl-content">
           <span class="tl-year" data-en="2026 – present">2026 – atual</span>
           <div class="tl-body">
-            <h3 data-en="Meu Bolso — personal project">Meu Bolso — projeto próprio</h3>
+            <h3><span class="tl-badge-current" data-en="Current">Atual</span> <span data-en="Meu Bolso — personal project">Meu Bolso — projeto próprio</span></h3>
             <p data-en="Personal finance app, from concept to code: fixed bills, credit cards, budgeting and monthly closing.">Aplicativo de controle financeiro pessoal, do conceito ao código: orçamento, contas fixas, cartões e fechamento mensal.</p>
           </div>
         </div>
@@ -245,7 +250,7 @@
         </div>
         <p class="card-problem" data-en-html="<strong>Problem:</strong> keeping track of personal finances in a simple way, without relying on spreadsheets."><strong>Problema:</strong> controlar orçamento pessoal de forma simples, sem depender de planilha.</p>
         <p class="card-solution" data-en-html="<strong>Solution:</strong> an app with fixed bills, credit cards and monthly closing, storing everything locally."><strong>Solução:</strong> app com contas fixas, cartões e fechamento de mês, guardando tudo localmente.</p>
-        <a href="#" class="card-link" aria-disabled="true" title="Link do repositório em breve" data-en="View on GitHub →">Ver no GitHub →</a>
+        <a href="https://github.com/OtavioFelix-in/MeuBolso" target="_blank" rel="noopener" class="card-link" data-en="View on GitHub →">Ver no GitHub →</a>
       </article>
 
       <article class="card">
@@ -285,8 +290,12 @@
         <div class="chips"><span>Power BI</span></div>
       </div>
       <div class="skill-group">
-        <h3 data-en="Tools">Ferramentas</h3>
-        <div class="chips"><span>Git</span><span>Excel</span><span>Word</span><span>PowerPoint</span><span>Canva</span><span>CapCut</span></div>
+        <h3 data-en="Development tools">Ferramentas de desenvolvimento</h3>
+        <div class="chips"><span>Git</span></div>
+      </div>
+      <div class="skill-group">
+        <h3 data-en="Productivity & media">Produtividade e mídia</h3>
+        <div class="chips"><span>Excel</span><span>Word</span><span>PowerPoint</span><span>Canva</span><span>CapCut</span></div>
       </div>
       <div class="skill-group">
         <h3 data-en="Fundamentals">Fundamentos</h3>
@@ -316,7 +325,7 @@
     </div>
 
     <ul class="courses">
-      <li><span data-en="Database Programming">Programação em Banco de Dados</span><em>SENAI · 120h</em></li>
+      <li class="course-db"><span data-en="Database Programming">Programação em Banco de Dados</span><em>SENAI · 120h</em></li>
       <li><span>Microsoft Office Specialist</span><em>SENAI · 60h</em></li>
       <li><span data-en="AI-900: Azure AI Fundamentals">AI-900: Fundamentos de IA Azure</span><em>SENAI · 40h</em></li>
       <li><span>Power BI</span><em>SENAI · 32h</em></li>
