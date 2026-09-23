@@ -1,0 +1,6 @@
+# Certificados originais (não redigidos, com RG) — nunca publicar
+# (ancorado na raiz para não pegar assets/certificados/, que são os já redigidos e públicos)
+/Certificados/
+
+# Imagem de origem do hero-bg (já usada em assets/hero-bg.png)
+assets/ChatGPT Image*.png

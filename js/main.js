@@ -1,6 +1,29 @@
 (function () {
   "use strict";
 
+  // ---- Transição suave entre páginas ----
+  requestAnimationFrame(function () {
+    document.body.classList.add("page-loaded");
+  });
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("a");
+    if (!a) return;
+    var href = a.getAttribute("href");
+    if (!href) return;
+    if (a.target === "_blank" || a.hasAttribute("download")) return;
+    if (href.charAt(0) === "#") return;
+    if (/^(https?:)?\/\//.test(href) || href.indexOf("mailto:") === 0 || href.indexOf("tel:") === 0) return;
+    if (href.slice(-5) !== ".html") return;
+
+    e.preventDefault();
+    document.body.classList.remove("page-loaded");
+    document.body.classList.add("page-leaving");
+    setTimeout(function () {
+      window.location.href = href;
+    }, 180);
+  });
+
   // ---- Tema claro/escuro (persistido em localStorage) ----
   var root = document.documentElement;
   var toggle = document.getElementById("theme-toggle");
