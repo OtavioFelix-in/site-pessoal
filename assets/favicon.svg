@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#ffffff"/>
-  <rect width="64" height="64" rx="14" fill="none" stroke="#e4ddd3" stroke-width="2"/>
-  <text x="32" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="36" fill="#9a5b28" text-anchor="middle">O</text>
+  <rect width="64" height="64" rx="15" fill="#9a5b28"/>
+  <!-- "o" itálico no estilo da Fraunces: traço grosso nas laterais, fino em cima e embaixo -->
+  <path fill-rule="evenodd" fill="#ffffff" transform="rotate(-14 27 36)"
+        d="M27 21c10 0 16.5 6.7 16.5 15S37 51 27 51 10.5 44.3 10.5 36 17 21 27 21Zm0 3.4c-4.3 0-7.2 5.2-7.2 11.6S22.7 47.6 27 47.6s7.2-5.2 7.2-11.6-2.9-11.6-7.2-11.6Z"/>
+  <circle cx="50" cy="47" r="4.8" fill="#ffffff"/>
 </svg>

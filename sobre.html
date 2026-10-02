@@ -17,7 +17,7 @@
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Otávio Felix</a>
+    <a href="index.html" class="nav-logo" aria-label="Otávio Felix — início">ofs<span class="dot">.</span></a>
     <nav class="nav-links" id="nav-links">
       <a href="index.html" data-en="Home">Início</a>
       <a href="sobre.html" class="active" data-en="About">Sobre</a>
@@ -41,48 +41,71 @@
 
 <main id="conteudo">
 
-  <section class="section section-first" id="sobre">
-    <p class="section-eyebrow" data-num="01" data-en="About">Sobre</p>
-    <h2 class="section-title" data-en="About me">Quem sou</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p data-en="I work in software development in a corporate environment, focused on building and maintaining applications, databases and process automation. I have hands-on experience with PL/SQL and SQL in an Oracle environment, and with web development in JavaScript, HTML and CSS.">
+  <section class="section section-first about" id="sobre">
+    <div class="about-intro">
+      <div class="about-portrait">
+        <img src="assets/foto.jpg" alt="Foto de Otávio Felix da Silva" onerror="this.parentElement.classList.add('no-photo')">
+        <span class="about-portrait-fallback" aria-hidden="true">OFS</span>
+      </div>
+      <div class="about-intro-text">
+        <p class="section-eyebrow" data-num="01" data-en="About">Sobre</p>
+        <h2 class="section-title" data-en="About me">Quem sou</h2>
+        <p class="about-lead" data-en="I work in software development in a corporate environment, focused on building and maintaining applications, databases and process automation. I have hands-on experience with PL/SQL and SQL in an Oracle environment, and with web development in JavaScript, HTML and CSS.">
           Atuo na área de desenvolvimento de software em ambiente corporativo, com foco em
           construção e manutenção de aplicações, banco de dados e automação de processos.
           Tenho experiência prática com PL/SQL e SQL em ambiente Oracle, e com desenvolvimento
           web em JavaScript, HTML e CSS.
         </p>
-
-        <figure class="about-photo">
-          <img src="assets/sobre-programando.jpg" alt="Otávio programando em um notebook, com um dicionário de dados aberto no editor de código">
-          <figcaption>
-            <span class="about-quote" data-en="“Everybody in this country should learn to program a computer, because it teaches you how to think.”">“Todo mundo neste país deveria aprender a programar um computador, porque isso ensina a pensar.”</span>
-            <cite data-en="— Steve Jobs">— Steve Jobs</cite>
-          </figcaption>
-        </figure>
-
-        <p data-en="My foundation includes data modeling, programming logic, data structures, object orientation, version control with Git and software engineering fundamentals. I'm an Information Systems student, with an ongoing interest in full-stack development, systems integration and process improvement through technology.">
-          Minha base inclui modelagem de dados, lógica de programação, estrutura de dados,
-          orientação a objetos, versionamento com Git e fundamentos de engenharia de software.
-          Sou estudante de Sistemas de Informação, com interesse contínuo em desenvolvimento
-          full-stack, integração de sistemas e melhoria de processos através da tecnologia.
-        </p>
-
-        <figure class="about-photo">
-          <img src="assets/sobre-projeto-proprio.jpg" alt="Setup de Otávio trabalhando em um projeto próprio, com código na tela">
-          <figcaption>
-            <span class="about-quote" data-en="“Creativity is just connecting things.”">“Criatividade é apenas conectar coisas.”</span>
-            <cite data-en="— Steve Jobs">— Steve Jobs</cite>
-          </figcaption>
-        </figure>
+        <div class="hero-actions">
+          <a href="projetos.html" class="btn btn-primary" data-en="View projects">Ver projetos</a>
+          <a href="contato.html" class="btn btn-ghost" data-en="Contact">Contato</a>
+        </div>
       </div>
-      <ul class="about-facts">
-        <li><strong data-en="Focus">Foco</strong><span data-en="Full-stack · Database · Automation">Full-stack · Banco de dados · Automação</span></li>
-        <li><strong data-en="Education">Formação</strong><span data-en="Information Systems — PUC-Campinas">Sistemas de Informação — PUC-Campinas</span></li>
-        <li><strong data-en="Location">Localização</strong><span>Paulínia, SP</span></li>
-        <li><strong data-en="Languages">Idiomas</strong><span data-en="Portuguese (native) · English A2 · Spanish basic">Português (nativo) · Inglês A2 · Espanhol básico</span></li>
-      </ul>
     </div>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-num" data-count="years" data-since="2022">0</span><span class="stat-label" data-en="years of journey">anos de trajetória</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label" data-en="focus areas">frentes de foco</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label" data-en="languages">idiomas</span></div>
+    </div>
+
+    <ul class="about-facts">
+      <li><strong data-en="Focus">Foco</strong><span data-en="Full-stack · Database · Automation">Full-stack · Banco de dados · Automação</span></li>
+      <li><strong data-en="Education">Formação</strong><span data-en="Information Systems — PUC-Campinas">Sistemas de Informação — PUC-Campinas</span></li>
+      <li><strong data-en="Location">Localização</strong><span>Paulínia, SP</span></li>
+      <li><strong data-en="Languages">Idiomas</strong><span data-en="Portuguese (native) · English A2 · Spanish basic">Português (nativo) · Inglês A2 · Espanhol básico</span></li>
+    </ul>
+  </section>
+
+  <div class="marquee" aria-label="Tecnologias que uso">
+    <div class="marquee-track"><span>PL/SQL</span><span>SQL</span><span>Oracle</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Git</span><span>Node.js</span><span>Java</span><span>Automação</span><span>Banco de dados</span></div>
+    <div class="marquee-track" aria-hidden="true"><span>PL/SQL</span><span>SQL</span><span>Oracle</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Git</span><span>Node.js</span><span>Java</span><span>Automação</span><span>Banco de dados</span></div>
+  </div>
+
+  <section class="section about about-story">
+    <div class="about-row">
+      <figure class="about-photo">
+        <div class="about-photo-frame"><img src="assets/sobre-programando.jpg" alt="Otávio programando em um notebook, com um dicionário de dados aberto no editor de código"></div>
+        <figcaption>
+          <span class="about-quote" data-en="“Everybody in this country should learn to program a computer, because it teaches you how to think.”">“Todo mundo neste país deveria aprender a programar um computador, porque isso ensina a pensar.”</span>
+          <cite data-en="— Steve Jobs">— Steve Jobs</cite>
+        </figcaption>
+      </figure>
+      <p class="about-body" data-en="My foundation includes data modeling, programming logic, data structures, object orientation, version control with Git and software engineering fundamentals. I'm an Information Systems student, with an ongoing interest in full-stack development, systems integration and process improvement through technology.">
+        Minha base inclui modelagem de dados, lógica de programação, estrutura de dados,
+        orientação a objetos, versionamento com Git e fundamentos de engenharia de software.
+        Sou estudante de Sistemas de Informação, com interesse contínuo em desenvolvimento
+        full-stack, integração de sistemas e melhoria de processos através da tecnologia.
+      </p>
+    </div>
+
+    <figure class="about-banner">
+      <div class="about-photo-frame"><img src="assets/sobre-projeto-proprio.jpg" alt="Setup de Otávio trabalhando em um projeto próprio, com código na tela"></div>
+      <figcaption>
+        <span class="about-quote" data-en="“Creativity is just connecting things.”">“Criatividade é apenas conectar coisas.”</span>
+        <cite data-en="— Steve Jobs">— Steve Jobs</cite>
+      </figcaption>
+    </figure>
   </section>
 
 </main>

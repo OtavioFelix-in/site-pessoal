@@ -10,6 +10,7 @@
 <meta property="og:title" content="Otávio Felix da Silva — Desenvolvedor Full-Stack">
 <meta property="og:description" content="Desenvolvimento full-stack, banco de dados e automação de processos. Estudante de Sistemas de Informação na PUC-Campinas.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="assets/video-capa.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Otávio Felix</a>
+    <a href="index.html" class="nav-logo" aria-label="Otávio Felix — início">ofs<span class="dot">.</span></a>
     <nav class="nav-links" id="nav-links">
       <a href="index.html" class="active" data-en="Home">Início</a>
       <a href="sobre.html" data-en="About">Sobre</a>
@@ -49,10 +50,37 @@
 
   <!-- HERO -->
   <section class="hero" id="topo">
+    <svg class="hero-art" viewBox="0 0 600 900" preserveAspectRatio="xMaxYMin slice" aria-hidden="true">
+      <defs>
+        <pattern id="hero-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.1" fill="var(--text-dimmer)" opacity=".35"/>
+        </pattern>
+      </defs>
+      <rect width="600" height="900" fill="url(#hero-dots)"/>
+      <circle cx="560" cy="930" r="380" fill="none" stroke="var(--accent)" stroke-opacity=".35" stroke-width="1.5"/>
+      <circle cx="560" cy="930" r="270" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+      <circle class="pulse-dot" cx="240" cy="725" r="6" fill="var(--accent)"/>
+      <line x1="36" y1="70" x2="36" y2="300" stroke="var(--accent)" stroke-width="2"/>
+      <g transform="translate(70 80)">
+        <rect width="470" height="250" rx="14" fill="var(--bg-elev)" stroke="var(--border)" stroke-width="1.5"/>
+        <line x1="0" y1="40" x2="470" y2="40" stroke="var(--border)" stroke-width="1.5"/>
+        <circle cx="24" cy="20" r="5.5" fill="var(--border)"/><circle cx="42" cy="20" r="5.5" fill="var(--border)"/><circle cx="60" cy="20" r="5.5" fill="var(--border)"/>
+        <text x="235" y="25" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="14" fill="var(--text-dimmer)">futuro.js</text>
+        <g font-family="ui-monospace, Consolas, monospace" font-size="19">
+          <text x="28" y="86"><tspan fill="var(--accent)">const</tspan><tspan fill="var(--text)"> futuro = {</tspan></text>
+          <text x="56" y="120" fill="var(--text-dim)">aprendizado: <tspan fill="var(--accent)">true</tspan>,</text>
+          <text x="56" y="154" fill="var(--text-dim)">disciplina: <tspan fill="var(--accent)">true</tspan>,</text>
+          <text x="56" y="188" fill="var(--text-dim)">grandesProjetos: <tspan fill="var(--accent)">true</tspan>,</text>
+          <text x="28" y="222" fill="var(--text)">};</text>
+          <rect class="cursor-blink" x="56" y="207" width="10" height="20" fill="var(--accent)" opacity=".8"/>
+        </g>
+      </g>
+      <text x="70" y="850" font-family="ui-monospace, Consolas, monospace" font-size="14" letter-spacing="4" fill="var(--text-dimmer)">&lt;/&gt;  CÓDIGO · IDEIAS · PROJETOS</text>
+    </svg>
     <div class="hero-inner">
       <div class="hero-photo">
         <img src="assets/foto.jpg" alt="Foto de Otávio Felix da Silva" onerror="this.parentElement.classList.add('no-photo')">
-        <span class="hero-photo-fallback" aria-hidden="true">OF</span>
+        <span class="hero-photo-fallback" aria-hidden="true">OFS</span>
       </div>
       <div class="hero-text">
         <p class="hero-eyebrow">Paulínia · SP</p>
@@ -77,6 +105,29 @@
     <a href="sobre.html" class="scroll-cue" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
     </a>
+  </section>
+
+  <!-- FAIXA DE TECNOLOGIAS -->
+  <div class="marquee" aria-label="Tecnologias que uso">
+    <div class="marquee-track"><span>PL/SQL</span><span>SQL</span><span>Oracle</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Git</span><span>Node.js</span><span>Java</span><span>Automação</span><span>Banco de dados</span></div>
+    <div class="marquee-track" aria-hidden="true"><span>PL/SQL</span><span>SQL</span><span>Oracle</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Git</span><span>Node.js</span><span>Java</span><span>Automação</span><span>Banco de dados</span></div>
+  </div>
+
+  <!-- VÍDEO -->
+  <section class="section section-video" id="video">
+    <p class="section-eyebrow" data-en="Watch">Assista</p>
+    <h2 class="section-title" data-en="30 seconds about me">30 segundos sobre mim</h2>
+    <div class="video-embed" data-yt="D_170oD0nEI">
+      <button type="button" class="video-play" aria-label="Reproduzir vídeo de apresentação">
+        <img src="assets/video-capa.jpg" alt="" loading="lazy" width="1280" height="720">
+        <span class="video-play-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+      </button>
+      <noscript>
+        <a href="https://www.youtube.com/watch?v=D_170oD0nEI" target="_blank" rel="noopener">Assistir no YouTube</a>
+      </noscript>
+    </div>
   </section>
 
   <!-- EXPLORAR -->
